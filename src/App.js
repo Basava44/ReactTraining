@@ -1,5 +1,6 @@
 import ClassBasedComponent from "./components/ClassBasedComponent";
 import FunctionBasedComponent from "./components/FunctionBasedComponent";
+import Button from "./components/Button";
 import "./App.css";
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <div>
       <FunctionBasedComponent />
       <ClassBasedComponent />
+      <Button text="Basava" />
     </div>
   );
 }
