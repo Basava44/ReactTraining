@@ -14,11 +14,14 @@ const FunctionBased = () => {
     }
   };
   return (
-    <div className="wrapper">
-      <button onClick={decrement}>-</button>
-      <div className="value">{counter}</div>
-      <button onClick={increment}>+</button>
-    </div>
+    <>
+      <div className="title">Function Based Component</div>
+      <div className="wrapper">
+        <button onClick={decrement}>-</button>
+        <div className="value">{counter}</div>
+        <button onClick={increment}>+</button>
+      </div>
+    </>
   );
 };
 

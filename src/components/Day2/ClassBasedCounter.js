@@ -30,11 +30,14 @@ class ClassBasedCounter extends React.Component {
 
   render() {
     return (
-      <div className="wrapper">
-        <button onClick={this.decrement}>-</button>
-        <div className="value">{this.state.counter}</div>
-        <button onClick={this.increment}>+</button>
-      </div>
+      <>
+        <div className="title">Class Based Component</div>
+        <div className="wrapper">
+          <button onClick={this.decrement}>-</button>
+          <div className="value">{this.state.counter}</div>
+          <button onClick={this.increment}>+</button>
+        </div>
+      </>
     );
   }
 }

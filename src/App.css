@@ -10,3 +10,64 @@
   margin: 0 10px;
   cursor: pointer;
 }
+
+.day{
+  margin: 4px;
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.youtubeCard{
+  margin: 20px 15px;
+}
+
+.thumbnail{
+  width: 400px;
+  position: relative;
+}
+
+.thumbnail-image{
+  width: 400px;
+  border-radius: 12px;
+  z-index: 1;
+}
+
+.thumbnail-duration{
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  border-radius: 12px;
+  padding: 2px 4px;
+  display: flex;
+  justify-content: center; 
+}
+
+.card{
+  margin: 10px;
+}
+
+.details-wrapper{
+  display: flex;
+  margin-top: 2px;
+}
+
+.details{
+  margin: 0 10px;
+}
+
+.details__title{
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.details__channelName{
+  font-size: 16px;
+  color: grey;
+}
+
+.details__views{
+  font-size: 14px;
+  color: grey;
+}
