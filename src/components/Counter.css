@@ -1,0 +1,16 @@
+.value{
+    font-size: 24px;
+    margin: 15px;
+    font-weight: bold;
+}
+
+.wrapper{
+    display: flex;
+    margin: 20px;
+}
+
+button{
+    padding: 10px 30px;
+    font-size: 24px;
+    font-weight: bold;
+}
