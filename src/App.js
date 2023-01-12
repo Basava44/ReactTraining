@@ -32,14 +32,14 @@ function App() {
       imageAddress:
         "https://designhub.co/wp-content/uploads/2020/06/TitleImage2.png",
       duration: "1:22",
-      title: "My Name is Irfan",
-      channelName: "Irfan Channel",
-      views: "200K",
+      title: "My Name is Shashi",
+      channelName: "Shashi Channel",
+      views: "600K",
     },
   ];
 
   const youtubeCards = details.map((card) => {
-    return <YoutubeCard details={card} key={card.title} />;
+    return <YoutubeCard details={card} key={Math.random()} />;
   });
 
   return (
