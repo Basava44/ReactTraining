@@ -9,6 +9,7 @@ import Card from "./components/Day3/Card";
 import YoutubeCard from "./components/Day3/YoutubeCard";
 
 import "./App.css";
+import LoginForm from "./components/Day4/LoginForm";
 
 function App() {
   const details = [
@@ -52,12 +53,18 @@ function App() {
       <Card>
         <div className="day">Day 2</div>
         <CustomButton text="Basava" />
-        <FunctionBased />
         <ClassBasedCounter />
+        <FunctionBased />
       </Card>
       <Card>
         <div className="day">Day 3</div>
         <div style={{ display: "flex", flexWrap: "wrap" }}>{youtubeCards}</div>
+      </Card>
+      <Card className="formCard">
+        <div className="day">Day 4</div>
+        <div className="login">
+          <LoginForm />
+        </div>
       </Card>
     </div>
   );

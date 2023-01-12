@@ -71,3 +71,12 @@
   font-size: 14px;
   color: grey;
 }
+
+.formCard{
+  padding: 10px 20px;
+}
+
+.login{
+  display: flex;
+  justify-content: center;
+}

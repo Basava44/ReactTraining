@@ -1,0 +1,21 @@
+.input{
+    margin-top: 10px;
+}
+
+.form{
+    border: 2px solid gray;
+    border-radius: 12px;
+    width: 350px;
+    background-color: white;
+    padding: 15px 20px;
+}
+
+.signIn{
+    margin-top: 6px;
+    text-align: center;
+}
+
+.signInButton{
+    color: blue;
+    cursor: pointer;
+}
