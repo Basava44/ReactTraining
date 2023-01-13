@@ -1,51 +1,51 @@
 import React from "react";
 
-import ClassBasedComponent from "./components/Day1/ClassBasedComponent";
-import FunctionBasedComponent from "./components/Day1/FunctionBasedComponent";
-import CustomButton from "./components/Day2/Button";
-import FunctionBased from "./components/Day2/FunctionBasedCounter";
-import ClassBasedCounter from "./components/Day2/ClassBasedCounter";
-import Card from "./components/Day3/Card";
-import YoutubeCard from "./components/Day3/YoutubeCard";
+// import ClassBasedComponent from "./components/Day1/ClassBasedComponent";
+// import FunctionBasedComponent from "./components/Day1/FunctionBasedComponent";
+// import CustomButton from "./components/Day2/Button";
+// import FunctionBased from "./components/Day2/FunctionBasedCounter";
+// import ClassBasedCounter from "./components/Day2/ClassBasedCounter";
+// import Card from "./components/Day3/Card";
+// import YoutubeCard from "./components/Day3/YoutubeCard";
+// import LoginForm from "./components/Day4/LoginForm";
 
 import "./App.css";
-import LoginForm from "./components/Day4/LoginForm";
 
 function App() {
-  const details = [
-    {
-      imageAddress:
-        "https://designhub.co/wp-content/uploads/2020/06/TitleImage2.png",
-      duration: "10:22",
-      title: "My Name is Basava",
-      channelName: "Basava Channel",
-      views: "1M",
-    },
-    {
-      imageAddress:
-        "https://designhub.co/wp-content/uploads/2020/06/TitleImage2.png",
-      duration: "1:22",
-      title: "My Name is Irfan",
-      channelName: "Irfan Channel",
-      views: "200K",
-    },
-    {
-      imageAddress:
-        "https://designhub.co/wp-content/uploads/2020/06/TitleImage2.png",
-      duration: "1:22",
-      title: "My Name is Shashi",
-      channelName: "Shashi Channel",
-      views: "600K",
-    },
-  ];
+  // const details = [
+  //   {
+  //     imageAddress:
+  //       "https://designhub.co/wp-content/uploads/2020/06/TitleImage2.png",
+  //     duration: "10:22",
+  //     title: "My Name is Basava",
+  //     channelName: "Basava Channel",
+  //     views: "1M",
+  //   },
+  //   {
+  //     imageAddress:
+  //       "https://designhub.co/wp-content/uploads/2020/06/TitleImage2.png",
+  //     duration: "1:22",
+  //     title: "My Name is Irfan",
+  //     channelName: "Irfan Channel",
+  //     views: "200K",
+  //   },
+  //   {
+  //     imageAddress:
+  //       "https://designhub.co/wp-content/uploads/2020/06/TitleImage2.png",
+  //     duration: "1:22",
+  //     title: "My Name is Shashi",
+  //     channelName: "Shashi Channel",
+  //     views: "600K",
+  //   },
+  // ];
 
-  const youtubeCards = details.map((card) => {
-    return <YoutubeCard details={card} key={Math.random()} />;
-  });
+  // const youtubeCards = details.map((card) => {
+  //   return <YoutubeCard details={card} key={Math.random()} />;
+  // });
 
   return (
     <div>
-      <Card>
+      {/* <Card>
         <div className="day">Day 1</div>
         <FunctionBasedComponent />
         <ClassBasedComponent />
@@ -65,7 +65,7 @@ function App() {
         <div className="login">
           <LoginForm />
         </div>
-      </Card>
+      </Card> */}
     </div>
   );
 }

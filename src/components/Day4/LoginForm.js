@@ -30,45 +30,53 @@ const LoginForm = () => {
     });
   };
 
-  const nameHandler = (event) => {
+  const inputHandler = (event) => {
+    const { name, value } = event.target;
     setFormDetails({
       ...formDetails,
-      name: event.target.value,
+      [name]: value,
     });
   };
 
-  const emailHandler = (event) => {
-    setFormDetails({
-      ...formDetails,
-      email: event.target.value,
-    });
-  };
+  // const nameHandler = (event) => {
+  //   setFormDetails({
+  //     ...formDetails,
+  //     name: event.target.value,
+  //   });
+  // };
 
-  const passwordHandler = (event) => {
-    setFormDetails({
-      ...formDetails,
-      password: event.target.value,
-    });
-  };
+  // const emailHandler = (event) => {
+  //   setFormDetails({
+  //     ...formDetails,
+  //     email: event.target.value,
+  //   });
+  // };
 
-  const confirmPasswordHandler = (event) => {
-    if (formDetails.password !== formDetails.confirmPassword) {
-      setHelperText("Password is not matching");
-    } else {
-      setHelperText("");
-    }
-    setFormDetails({
-      ...formDetails,
-      confirmPassword: event.target.value,
-    });
-  };
+  // const passwordHandler = (event) => {
+  //   setFormDetails({
+  //     ...formDetails,
+  //     password: event.target.value,
+  //   });
+  // };
 
-  const checkBoxHandler = (event) => {
-    setFormDetails({
-      ...formDetails,
-      checkbox: event.target.checked,
-    });
-  };
+  // const confirmPasswordHandler = (event) => {
+  //   if (formDetails.password !== formDetails.confirmPassword) {
+  //     setHelperText("Password is not matching");
+  //   } else {
+  //     setHelperText("");
+  //   }
+  //   setFormDetails({
+  //     ...formDetails,
+  //     confirmPassword: event.target.value,
+  //   });
+  // };
+
+  // const checkBoxHandler = (event) => {
+  //   setFormDetails({
+  //     ...formDetails,
+  //     checkbox: event.target.checked,
+  //   });
+  // };
 
   return (
     <form className="form" onSubmit={submit} autoComplete="false">
@@ -80,7 +88,8 @@ const LoginForm = () => {
         type="text"
         aria-label="Name"
         value={formDetails.name}
-        onChange={nameHandler}
+        onChange={inputHandler}
+        name="name"
       />
 
       <TextField
@@ -91,7 +100,8 @@ const LoginForm = () => {
         type="email"
         aria-label="Email"
         value={formDetails.email}
-        onChange={emailHandler}
+        onChange={inputHandler}
+        name="email"
       />
 
       <TextField
@@ -102,8 +112,9 @@ const LoginForm = () => {
         type="password"
         aria-label="Password"
         value={formDetails.password}
-        onChange={passwordHandler}
+        onChange={inputHandler}
         inputProps={{ minLength: 8 }}
+        name="password"
       />
 
       <TextField
@@ -113,11 +124,12 @@ const LoginForm = () => {
         fullWidth
         type="password"
         value={formDetails.confirmPassword}
-        onChange={confirmPasswordHandler}
+        onChange={inputHandler}
         error={
           formDetails.password !== formDetails.confirmPassword &&
           helperText !== ""
         }
+        name="confirmPassword"
       />
 
       <FormControlLabel
@@ -126,7 +138,8 @@ const LoginForm = () => {
             color="primary"
             size="small"
             checked={formDetails.checkbox}
-            onChange={checkBoxHandler}
+            onChange={inputHandler}
+            name="checkbox"
           />
         }
         label="I agree the Terms and Conditions"
