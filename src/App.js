@@ -8,6 +8,7 @@ import React from "react";
 // import Card from "./components/Day3/Card";
 // import YoutubeCard from "./components/Day3/YoutubeCard";
 // import LoginForm from "./components/Day4/LoginForm";
+import TaskManager from "./components/Day5/TaskManager";
 
 import "./App.css";
 
@@ -44,7 +45,7 @@ function App() {
   // });
 
   return (
-    <div>
+    <div className="wrapper">
       {/* <Card>
         <div className="day">Day 1</div>
         <FunctionBasedComponent />
@@ -66,6 +67,7 @@ function App() {
           <LoginForm />
         </div>
       </Card> */}
+      <TaskManager />
     </div>
   );
 }
