@@ -81,7 +81,7 @@
   justify-content: center;
 } */
 
-.wrapper {
+/* .wrapper {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -102,4 +102,9 @@
 
 .card {
   margin: 15px 0;
+} */
+
+* {
+  margin: 0;
+  padding: 0;
 }
